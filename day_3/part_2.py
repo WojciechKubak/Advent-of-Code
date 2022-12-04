@@ -1,5 +1,7 @@
 from typing import Final
 
+# # https://adventofcode.com/2022/day/3
+
 def get_data_from_file(path: str) -> list[str]:
     with open(path, 'r') as f:
         return f.readlines()
