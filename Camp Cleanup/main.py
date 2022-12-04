@@ -19,6 +19,7 @@ def get_assignments(pairs: list[str]) -> list[tuple[range, range]]:
 
 
 def count_fully_contained_ranges(assignments: list[tuple[range, range]]) -> int:
+    
     def is_fully_contained(first_section: range, second_section: range) -> bool:
         return (first_section[0] in second_section and first_section[-1] in second_section) or \
             (second_section[0] in first_section and second_section[-1] in first_section)
