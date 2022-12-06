@@ -56,7 +56,7 @@ def main() -> None:
     STACK_LINE_END: Final[int] = 8
     INSTRUCTIONS_LINE_START: Final[int] = 10
 
-    data = load_data('Supply_Stacks\input.txt')
+    data = load_data(r'input.txt')
     stacks, instructions = get_stacks(data, STACK_LINE_END), get_instructions(data, INSTRUCTIONS_LINE_START)
 
     show_tops(stacks, instructions)

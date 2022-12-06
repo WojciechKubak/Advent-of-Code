@@ -39,7 +39,7 @@ def count_overlapping_ranges(assignments: list[tuple[range, range]]) -> int:
 
 
 def main() -> None:
-    sections = load_file(r'Camp Cleanup\input.txt')
+    sections = load_file(r'input.txt')
     assignments = get_assignments(sections)
     print(f'Fully contained ranges counter: {count_fully_contained_ranges(assignments)}.')
     print(f'Overlapping ranges counter: {count_overlapping_ranges(assignments)}.')

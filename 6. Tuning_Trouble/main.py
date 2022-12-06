@@ -18,7 +18,7 @@ def detect_marker(datastream: str, signal_length: int) -> int:
 
 def main() -> None:
     SIGNAL_LENGTH: Final[int] = 14
-    datastream = load_data('input.txt')
+    datastream = load_data(r'input.txt')
     print(f'Marker detected at position: {detect_marker(datastream, SIGNAL_LENGTH)}.')
 
 if __name__ == '__main__':
